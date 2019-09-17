@@ -1,0 +1,219 @@
+.tabContainer{
+    /*width: 850px !important;*/
+    height: 1000px !important;
+    background-color: rgba(233, 237, 237, 0.32);
+    /*background-color: rgba(233, 237, 237, 0.32) !important;*/
+}
+
+#dashborad_menu {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    padding: 0;
+    list-style: none;
+    /*margin-left: 20px;*/
+    margin: 7em auto 0;
+    border: solid 5px #1F6DAD;
+}
+
+#dashborad_menu .menu-item{
+    border: solid 5px #1F6DAD;
+    top: 50%;
+    left: 50%;
+    display: block;
+    float: left;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin: -55px;
+}
+
+#dashborad_menu .menu-line{
+    top: 50%;
+    left: 7%;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    /*margin: -300px;*/
+}
+
+.arrow {
+    /*margin-left: 200px;*/
+    /*opacity: 0.5;*/
+    /*width:400px;*/
+    background: #1F6DAD;
+    height:6px;
+}
+
+.arrow-first {
+    width: 30px;
+    margin-right: 120px !important;
+}
+
+.arrow-second {
+    width: 130px;
+    margin-right: 120px !important;
+}
+
+.arrow-third {
+    width: 130px;
+    margin-right: 120px !important;
+}
+
+.arrow-forth {
+    width: 30px;
+}
+
+
+
+#dashborad_menu > *:nth-of-type(1) {
+  -webkit-transform: rotate(0deg) translate(0px) rotate(0deg);
+          transform: rotate(0deg) translate(0px) rotate(0deg);
+}
+
+#dashborad_menu > *:nth-of-type(2) {
+  -webkit-transform: rotate(0deg) translate(250px) rotate(-0deg);
+          transform: rotate(0deg) translate(250px) rotate(-0deg);
+}
+
+#dashborad_menu > *:nth-of-type(3) {
+  -webkit-transform: rotate(30deg) translate(250px) rotate(-30deg);
+          transform: rotate(30deg) translate(250px) rotate(-30deg);
+}
+
+#dashborad_menu > *:nth-of-type(4) {
+  -webkit-transform: rotate(60deg) translate(250px) rotate(-60deg);
+          transform: rotate(60deg) translate(250px) rotate(-60deg);
+}
+
+#dashborad_menu > *:nth-of-type(5) {
+  -webkit-transform: rotate(90deg) translate(250px) rotate(-90deg);
+          transform: rotate(90deg) translate(250px) rotate(-90deg);
+}
+
+#dashborad_menu > *:nth-of-type(6) {
+  -webkit-transform: rotate(120deg) translate(250px) rotate(-120deg);
+          transform: rotate(120deg) translate(250px) rotate(-120deg);
+}
+
+#dashborad_menu > *:nth-of-type(7) {
+  -webkit-transform: rotate(150deg) translate(250px) rotate(-150deg);
+          transform: rotate(150deg) translate(250px) rotate(-150deg);
+}
+
+#dashborad_menu > *:nth-of-type(8) {
+  -webkit-transform: rotate(180deg) translate(250px) rotate(-180deg);
+          transform: rotate(180deg) translate(250px) rotate(-180deg);
+}
+
+#dashborad_menu > *:nth-of-type(9) {
+  -webkit-transform: rotate(210deg) translate(250px) rotate(-210deg);
+          transform: rotate(210deg) translate(250px) rotate(-210deg);
+}
+
+#dashborad_menu > *:nth-of-type(10) {
+  -webkit-transform: rotate(240deg) translate(250px) rotate(-240deg);
+          transform: rotate(240deg) translate(250px) rotate(-240deg);
+}
+
+#dashborad_menu > *:nth-of-type(11) {
+  -webkit-transform: rotate(270deg) translate(250px) rotate(-270deg);
+          transform: rotate(270deg) translate(250px) rotate(-270deg);
+}
+
+#dashborad_menu > *:nth-of-type(12) {
+  -webkit-transform: rotate(300deg) translate(250px) rotate(-300deg);
+          transform: rotate(300deg) translate(250px) rotate(-300deg);
+}
+
+#dashborad_menu > *:nth-of-type(13) {
+  -webkit-transform: rotate(330deg) translate(250px) rotate(-330deg);
+          transform: rotate(330deg) translate(250px) rotate(-330deg);
+}
+
+#dashborad_menu > *:nth-of-type(14) {
+  -webkit-transform: rotate(0deg) translate(400px) rotate(-0deg);
+          transform: rotate(0deg) translate(400px) rotate(-0deg);
+}
+
+#dashborad_menu > *:nth-of-type(15) {
+  -webkit-transform: rotate(30deg) translate(400px) rotate(-30deg);
+          transform: rotate(30deg) translate(400px) rotate(-30deg);
+}
+
+#dashborad_menu > *:nth-of-type(16) {
+  -webkit-transform: rotate(60deg) translate(400px) rotate(-60deg);
+          transform: rotate(60deg) translate(400px) rotate(-60deg);
+}
+
+#dashborad_menu > *:nth-of-type(17) {
+  -webkit-transform: rotate(90deg) translate(400px) rotate(-90deg);
+          transform: rotate(90deg) translate(400px) rotate(-90deg);
+}
+
+#dashborad_menu > *:nth-of-type(18) {
+  -webkit-transform: rotate(120deg) translate(400px) rotate(-120deg);
+          transform: rotate(120deg) translate(400px) rotate(-120deg);
+}
+
+#dashborad_menu > *:nth-of-type(19) {
+  -webkit-transform: rotate(150deg) translate(400px) rotate(-150deg);
+          transform: rotate(150deg) translate(400px) rotate(-150deg);
+}
+
+#dashborad_menu > *:nth-of-type(20) {
+  -webkit-transform: rotate(180deg) translate(400px) rotate(-180deg);
+          transform: rotate(180deg) translate(400px) rotate(-180deg);
+}
+
+#dashborad_menu > *:nth-of-type(21) {
+  -webkit-transform: rotate(210deg) translate(400px) rotate(-210deg);
+          transform: rotate(210deg) translate(400px) rotate(-210deg);
+}
+
+#dashborad_menu > *:nth-of-type(22) {
+  -webkit-transform: rotate(240deg) translate(400px) rotate(-240deg);
+          transform: rotate(240deg) translate(400px) rotate(-240deg);
+}
+
+#dashborad_menu > *:nth-of-type(23) {
+  -webkit-transform: rotate(270deg) translate(400px) rotate(-270deg);
+          transform: rotate(270deg) translate(400px) rotate(-270deg);
+}
+
+#dashborad_menu > *:nth-of-type(24) {
+  -webkit-transform: rotate(300deg) translate(400px) rotate(-300deg);
+          transform: rotate(300deg) translate(400px) rotate(-300deg);
+}
+
+#dashborad_menu > *:nth-of-type(25) {
+  -webkit-transform: rotate(330deg) translate(400px) rotate(-330deg);
+          transform: rotate(330deg) translate(400px) rotate(-330deg);
+}
+
+#dashborad_menu > *:nth-of-type(26) {
+          transform: rotate(0deg);
+}
+
+#dashborad_menu > *:nth-of-type(27) {
+          transform: rotate(-30deg);
+}
+
+#dashborad_menu > *:nth-of-type(28) {
+          transform: rotate(-60deg);
+}
+
+#dashborad_menu > *:nth-of-type(29) {
+          transform: rotate(-90deg);
+}
+
+#dashborad_menu > *:nth-of-type(30) {
+          transform: rotate(-120deg);
+}
+
+#dashborad_menu > *:nth-of-type(31) {
+          transform: rotate(-150deg);
+}

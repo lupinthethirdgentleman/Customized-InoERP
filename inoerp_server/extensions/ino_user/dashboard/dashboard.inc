@@ -131,11 +131,33 @@ if (!empty($_SESSION['allowed_modules'])) {
     foreach (user_dashboard_v::$icon_stmt_a as $k => $icon_a) {
         if (in_array($k, $_SESSION['allowed_modules'])) {
             // $temp .= $icon_a['description'] . ' ';
-            $module_icons .= '<li><k class="circle-frame"><a  class="ajax-link"  href="form.php?module_code=' . $k . '">'
+            $module_icons .= '<li class="menu-item"><k class="circle-frame"><a  class="ajax-link"  href="form.php?module_code=' . $k . '">'
                     . '<i class="fa ' . $icon_a['div_class'] . '"></i></k><j class="very-small-text">' . gettext($icon_a['description']) . '</j></a></li>';
         }
     }
     // echo ($temp);
     // exit(0);
 }
+
+if($ino_user->ino_user_id == 1 || $ino_user->ino_user_id == 2) {
+    for ($x = 0; $x < 6; $x++) {
+        $module_icons .= '<li class="menu-line"><div class="arrow arrow-first"></div><div class="arrow arrow-second"></div><div class="arrow arrow-third"></div><div class="arrow arrow-forth"></div></li>';
+        // $module_icons .= '<li class="menu-line"><div class="arrow"></div></li>';
+    }
+}
+
+if($ino_user->ino_user_id == 4) {
+    for ($x = 0; $x < 4; $x++) {
+        $module_icons .= '<li class="menu-line"><div class="arrow arrow-first"></div><div class="arrow"></div></li>';
+    }
+}
+
+if ($ino_user->ino_user_id != 4 && $ino_user->ino_user_id != 1 && $ino_user->ino_user_id != 2) {
+    for ($x = 0; $x < 3; $x++) {
+        $module_icons .= '<li class="menu-line"><div class="arrow"></div></li>';
+    }
+}
+
+$module_icons .= '</ul>';
+
 ?>

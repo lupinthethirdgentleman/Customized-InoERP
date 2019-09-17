@@ -5,6 +5,18 @@ if (!empty($ino_user->use_personal_db_cb)) {
 }
 ?>
 <link href="<?php echo HOME_URL; ?>css/getsvgimage.css" media="all" rel="stylesheet" type="text/css" />
+<?php
+  
+  if ($ino_user->ino_user_id == 1 || $ino_user->ino_user_id == 2) {
+    echo '<link href="' . HOME_URL . 'css/rolecss/admin.css" media="all" rel="stylesheet" type="text/css" />';
+  }
+  if ($ino_user->ino_user_id == 4) {
+    echo '<link href="' . HOME_URL . 'css/rolecss/buyer.css" media="all" rel="stylesheet" type="text/css" />';
+  }
+  if ($ino_user->ino_user_id != 4 && $ino_user->ino_user_id != 1 && $ino_user->ino_user_id != 2) {
+    echo '<link href="' . HOME_URL . 'css/rolecss/other.css" media="all" rel="stylesheet" type="text/css" />';
+  }
+?>
 <div id ="user_dashboard_divId">
  <div id="tabsHeader">
   <form method="post" id="user_header" name="user_header"><span class="heading"><?php echo gettext('User Dashboard') ?> 

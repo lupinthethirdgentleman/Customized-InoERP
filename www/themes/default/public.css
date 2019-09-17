@@ -1354,32 +1354,8 @@ select.search_document_list option:nth-child(even) {
     font-size: 14px;
 }
 
-
-#dashborad_menu {
-    position: relative;
-    width: 800px;
-    height: 800px;
-    border-radius: 50%;
-    padding: 0;
-    list-style: none;
-    /*margin-left: 20px;*/
-    /*margin: 5em auto 0;*/
-    /*border: solid 5px tomato;*/
-}
-
-#dashborad_menu li{
-    top: 50%;
-    left: 50%;
-    display: block;
-    float: left;
-    position: absolute;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 50%;
-}
-
 @media (max-width: 600px) {
-    #dashborad_menu li{
+    #dashborad_menu .menu-item{
         width: 95px;
         height: 95px;
         padding-top: 10px;
@@ -1388,7 +1364,7 @@ select.search_document_list option:nth-child(even) {
 }
 
 @media (min-width: 601px) {
-    #dashborad_menu li{
+    #dashborad_menu .menu-item{
         width: 110px;
         height: 110px;
         padding-top: 20px;
@@ -1396,177 +1372,52 @@ select.search_document_list option:nth-child(even) {
     }
 }
 
-#dashborad_menu li:nth-child(n){
+#dashborad_menu .menu-item:nth-child(n){
     background-color: rgba(77, 21, 136, 0.62);
 }
 
-#dashborad_menu li:nth-child(2n){
+#dashborad_menu .menu-item:nth-child(2n){
     background-color: rgba(142, 147, 17, 0.89);
 }
 
-#dashborad_menu li:nth-child(3n){
+#dashborad_menu .menu-item:nth-child(3n){
     background-color: rgba(41, 162, 51, 0.8) ;
 }
 
-#dashborad_menu li:nth-child(4n){
+#dashborad_menu .menu-item:nth-child(4n){
     background-color: rgba(42, 147, 177, 0.89) !important;;
 }
 
-#dashborad_menu li:nth-child(5n) {
+#dashborad_menu .menu-item:nth-child(5n) {
     background-color: rgba(41, 67, 136, 0.77) !important;;
 }
 
-#dashborad_menu li:nth-child(6n) {
+#dashborad_menu .menu-item:nth-child(6n) {
     background-color: rgba(153, 79, 38, 0.93) !important;
 }
 
-#dashborad_menu li:nth-child(11n) {
+#dashborad_menu .menu-item:nth-child(11n) {
     background-color: rgba(12, 119, 210, 0.9) !important;
 }
 
-#dashborad_menu li:nth-child(17n) {
+#dashborad_menu .menu-item:nth-child(17n) {
     background-color: rgba(12, 119, 210, 0.9) !important;
 }
 
-#dashborad_menu li:hover{
+#dashborad_menu .menu-item:hover{
     /*background-color: #2574A9;*/
     /*border-radius: 60px;*/ 
     overflow: hidden;      
 }
 
-#dashborad_menu li a{
+#dashborad_menu .menu-item a{
     font-size: 1.7em;
     font-weight: bold; 
     color: #fff;        
 }
 
-#dashborad_menu li .circle-frame a :hover{
+#dashborad_menu .menu-item .circle-frame a :hover{
     font-size: 4.2em;
-}
-
-#dashborad_menu > *:nth-of-type(1) {
-  -webkit-transform: rotate(0deg) translate(0px) rotate(0deg);
-          transform: rotate(0deg) translate(0px) rotate(0deg);
-}
-
-#dashborad_menu > *:nth-of-type(2) {
-  -webkit-transform: rotate(0deg) translate(250px) rotate(-0deg);
-          transform: rotate(0deg) translate(250px) rotate(-0deg);
-}
-
-#dashborad_menu > *:nth-of-type(3) {
-  -webkit-transform: rotate(30deg) translate(250px) rotate(-30deg);
-          transform: rotate(30deg) translate(250px) rotate(-30deg);
-}
-
-#dashborad_menu > *:nth-of-type(4) {
-  -webkit-transform: rotate(60deg) translate(250px) rotate(-60deg);
-          transform: rotate(60deg) translate(250px) rotate(-60deg);
-}
-
-#dashborad_menu > *:nth-of-type(5) {
-  -webkit-transform: rotate(90deg) translate(250px) rotate(-90deg);
-          transform: rotate(90deg) translate(250px) rotate(-90deg);
-}
-
-#dashborad_menu > *:nth-of-type(6) {
-  -webkit-transform: rotate(120deg) translate(250px) rotate(-120deg);
-          transform: rotate(120deg) translate(250px) rotate(-120deg);
-}
-
-#dashborad_menu > *:nth-of-type(7) {
-  -webkit-transform: rotate(150deg) translate(250px) rotate(-150deg);
-          transform: rotate(150deg) translate(250px) rotate(-150deg);
-}
-
-#dashborad_menu > *:nth-of-type(8) {
-  -webkit-transform: rotate(180deg) translate(250px) rotate(-180deg);
-          transform: rotate(180deg) translate(250px) rotate(-180deg);
-}
-
-#dashborad_menu > *:nth-of-type(9) {
-  -webkit-transform: rotate(210deg) translate(250px) rotate(-210deg);
-          transform: rotate(210deg) translate(250px) rotate(-210deg);
-}
-
-#dashborad_menu > *:nth-of-type(10) {
-  -webkit-transform: rotate(240deg) translate(250px) rotate(-240deg);
-          transform: rotate(240deg) translate(250px) rotate(-240deg);
-}
-
-#dashborad_menu > *:nth-of-type(11) {
-  -webkit-transform: rotate(270deg) translate(250px) rotate(-270deg);
-          transform: rotate(270deg) translate(250px) rotate(-270deg);
-}
-
-#dashborad_menu > *:nth-of-type(12) {
-  -webkit-transform: rotate(300deg) translate(250px) rotate(-300deg);
-          transform: rotate(300deg) translate(250px) rotate(-300deg);
-}
-
-#dashborad_menu > *:nth-of-type(13) {
-  -webkit-transform: rotate(330deg) translate(250px) rotate(-330deg);
-          transform: rotate(330deg) translate(250px) rotate(-330deg);
-}
-
-#dashborad_menu > *:nth-of-type(14) {
-  -webkit-transform: rotate(0deg) translate(400px) rotate(-0deg);
-          transform: rotate(0deg) translate(400px) rotate(-0deg);
-}
-
-#dashborad_menu > *:nth-of-type(15) {
-  -webkit-transform: rotate(30deg) translate(400px) rotate(-30deg);
-          transform: rotate(30deg) translate(400px) rotate(-30deg);
-}
-
-#dashborad_menu > *:nth-of-type(16) {
-  -webkit-transform: rotate(60deg) translate(400px) rotate(-60deg);
-          transform: rotate(60deg) translate(400px) rotate(-60deg);
-}
-
-#dashborad_menu > *:nth-of-type(17) {
-  -webkit-transform: rotate(90deg) translate(400px) rotate(-90deg);
-          transform: rotate(90deg) translate(400px) rotate(-90deg);
-}
-
-#dashborad_menu > *:nth-of-type(18) {
-  -webkit-transform: rotate(120deg) translate(400px) rotate(-120deg);
-          transform: rotate(120deg) translate(400px) rotate(-120deg);
-}
-
-#dashborad_menu > *:nth-of-type(19) {
-  -webkit-transform: rotate(150deg) translate(400px) rotate(-150deg);
-          transform: rotate(150deg) translate(400px) rotate(-150deg);
-}
-
-#dashborad_menu > *:nth-of-type(20) {
-  -webkit-transform: rotate(180deg) translate(400px) rotate(-180deg);
-          transform: rotate(180deg) translate(400px) rotate(-180deg);
-}
-
-#dashborad_menu > *:nth-of-type(21) {
-  -webkit-transform: rotate(210deg) translate(400px) rotate(-210deg);
-          transform: rotate(210deg) translate(400px) rotate(-210deg);
-}
-
-#dashborad_menu > *:nth-of-type(22) {
-  -webkit-transform: rotate(240deg) translate(400px) rotate(-240deg);
-          transform: rotate(240deg) translate(400px) rotate(-240deg);
-}
-
-#dashborad_menu > *:nth-of-type(23) {
-  -webkit-transform: rotate(270deg) translate(400px) rotate(-270deg);
-          transform: rotate(270deg) translate(400px) rotate(-270deg);
-}
-
-#dashborad_menu > *:nth-of-type(24) {
-  -webkit-transform: rotate(300deg) translate(400px) rotate(-300deg);
-          transform: rotate(300deg) translate(400px) rotate(-300deg);
-}
-
-#dashborad_menu > *:nth-of-type(25) {
-  -webkit-transform: rotate(330deg) translate(400px) rotate(-330deg);
-          transform: rotate(330deg) translate(400px) rotate(-330deg);
 }
 
 .very-small-text{
@@ -1577,7 +1428,7 @@ select.search_document_list option:nth-child(even) {
 .very-small-text :hover{
     display: none;
 }
-#dashborad_menu li .fa{
+#dashborad_menu .menu-item .fa{
     font-size: 2em;
     display: block;
     text-align: center;
@@ -2597,13 +2448,9 @@ ul.single-column li{
     z-index: 1220;
 }
 
-.tabContent {
-    margin: 25px 0 0 50px;
-}
-
 .tabContainer{
     /*width: 850px !important;*/
-    height: 1000px !important;
+    /*height: 1000px !important;*/
     background-color: rgba(233, 237, 237, 0.32);
     /*background-color: rgba(233, 237, 237, 0.32) !important;*/
 }
