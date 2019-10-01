@@ -123,6 +123,9 @@ if (!empty($comment_result)) {
     $comment_string .= $pagination_c->show_pagination();
 }
 
+// echo($ino_user->ino_user_id);
+// exit(0);
+
 $comment_string .= '</div>';
 // $temp = '';
 // print_r(user_dashboard_v::$icon_stmt_a);

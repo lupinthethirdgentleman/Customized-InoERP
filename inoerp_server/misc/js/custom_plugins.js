@@ -298,7 +298,7 @@
          response(data);
         },
         error: function (request, errorType, errorMessage) {
-         alert("Error : " + errorType + ' with message ' + errorMessage);
+         // alert("Error : " + errorType + ' with message ' + errorMessage);
          $(this).autocomplete("close");
         }
        });

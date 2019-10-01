@@ -1056,7 +1056,7 @@ autoCompleteMain.prototype.autoComplete = function ()
        response(data);
       },
       error: function (request, errorType, errorMessage) {
-       alert("Error : " + errorType + ' with message ' + errorMessage);
+       // alert("Error : " + errorType + ' with message ' + errorMessage);
        $(this).autocomplete("close");
       }
      });
@@ -1380,6 +1380,8 @@ mandatoryFieldMain.prototype.mandatoryField = function ()
 };
 
 function lotSerial_quantityValidation(options) {
+  
+
  var defaults = {
   quantity_divClass: '.transaction_quantity'
  };
@@ -1387,7 +1389,11 @@ function lotSerial_quantityValidation(options) {
  var settings = $.extend({}, defaults, options);
  var retValue = 1;
  $('.add_detail_values1').each(function () {
+   console.log($('.uom_id').val());
+   // alert("Here");
   if ($(this).children('.serial_generation').val()) {
+    console.log($('.uom_id').val());
+
    var trClass = '.' + $(this).closest("tr").prop('class').replace(/\s+/g, '.');
    var qty = +$('#content').find(trClass).find(settings.quantity_divClass).val();
    var noOfSerialIds = 0;
@@ -1396,7 +1402,7 @@ function lotSerial_quantityValidation(options) {
      noOfSerialIds++;
     }
    })
-
+   console.log($('.uom_id').val());
    if (noOfSerialIds != qty) {
     var noOfSerials = 0;
     $(this).closest('td').find('.serial_number').each(function () {
@@ -1404,6 +1410,7 @@ function lotSerial_quantityValidation(options) {
       noOfSerials++;
      }
     })
+
     if (noOfSerials != qty) {
      alert('Can\'t save data as no of serial numbers doesnt match quantity \nNo of serial numbers entered : ' + noOfSerials + '\nNo of units :' + qty);
      retValue = -10;

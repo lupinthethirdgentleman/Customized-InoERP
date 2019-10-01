@@ -6,6 +6,11 @@
 $all_reports = user_dashboard_config::findBy_userIdNconfigLevel($ino_user->ino_user_id);
 //pa($all_reports);
 ?>
+<?php
+  if ($ino_user->ino_user_id == 1) {
+    echo '<link href="' . HOME_URL . 'css/rolecss/admin.css" media="all" rel="stylesheet" type="text/css" />';
+  }
+?>
 <link href="<?php echo HOME_URL; ?>css/getsvgimage.css" media="all" rel="stylesheet" type="text/css" />
 <div id ="user_dashboard_divId">
  <div id="tabsHeader">
